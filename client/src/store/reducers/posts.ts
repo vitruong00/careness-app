@@ -5,11 +5,12 @@ export const fetchAllPosts = createAsyncThunk(
   "posts/fetchPosts",
   async (userId: number, thunkAPI: any) => {
     const posts = await api.fetchPosts();
-    thunkAPI.dispatch(setAllPosts(posts));
+    console.log(posts, "getchhh");
+    thunkAPI.dispatch(setAllPosts(posts.data));
   }
 );
 
-const initialState = { allPosts: [] };
+const initialState = { allPosts: [] as any };
 
 export const postsSlice = createSlice({
   name: "posts",

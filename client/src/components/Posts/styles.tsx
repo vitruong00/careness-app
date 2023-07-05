@@ -11,4 +11,9 @@ export default makeStyles((theme: any) => ({
   actionDiv: {
     textAlign: "center",
   },
+  spinner: {
+    position: "relative",
+    left: "50%",
+    top: "70%",
+  },
 }));

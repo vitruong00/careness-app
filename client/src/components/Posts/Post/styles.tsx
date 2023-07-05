@@ -3,8 +3,7 @@ import { makeStyles } from "@mui/styles";
 export default makeStyles({
   media: {
     height: 0,
-    paddingTop: "56.25%",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    paddingTop: "56%",
     backgroundBlendMode: "darken",
   },
   border: {
@@ -22,16 +21,14 @@ export default makeStyles({
     position: "relative",
   },
   overlay: {
-    position: "absolute",
-    top: "20px",
-    left: "20px",
-    color: "white",
+    display: "flex",
+    justifyContent: "flex-end",
+    color: "black",
   },
   overlay2: {
     position: "absolute",
-    top: "20px",
-    right: "20px",
-    color: "white",
+    top: "0px",
+    right: "0px",
   },
   grid: {
     display: "flex",

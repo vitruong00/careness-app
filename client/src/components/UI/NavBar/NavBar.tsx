@@ -5,7 +5,7 @@ import { AccountCircle } from "@mui/icons-material";
 
 const NavBar = () => {
   return (
-    <AppBar position="relative">
+    <AppBar position="fixed">
       <Toolbar>
         <IconButton
           size="large"

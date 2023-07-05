@@ -15,6 +15,10 @@ export default makeStyles(() => ({
   image: {
     marginLeft: "15px",
   },
+  container: {
+    position: "relative",
+    top: "70px",
+  },
 }));
 
 export const theme = createTheme({
