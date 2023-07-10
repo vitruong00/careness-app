@@ -19,6 +19,7 @@ const Input = (props: InputProps) => (
       variant="outlined"
       required
       fullWidth
+      name={props.name}
       label={props.label}
       autoFocus={props.autoFocus}
       type={props.type}

@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import useStyles from "./styles";
+import { useDispatch } from "react-redux";
 import { Grid, Grow } from "@mui/material";
+import { AppThunkDispatch } from "../../store";
 
 import Posts from "../Posts/Posts";
 import Form from "../Form/Form";
+import { fetchAllPosts } from "../../store/reducers/posts";
 
 const Home = () => {
   const classes = useStyles();
+  const dispatch = useDispatch<AppThunkDispatch>();
+
+  useEffect(() => {
+    dispatch(fetchAllPosts(1));
+  }, []);
   return (
     <Grow in={true} className={classes.container}>
       <Grid
